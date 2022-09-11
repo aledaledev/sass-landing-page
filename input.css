@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+.input{
+    @apply p-2 text-slate-600 bg-zinc-50 border-gray-300 border shadow-inner w-56 
+}
+.props{
+    @apply p-2 font-light capitalize
+}
+.btn{
+    @apply rounded-sm text-slate-100 px-2 py-1 capitalize cursor-pointer
+}
+.ul{
+    @apply flex items-center bg-white p-4 border shadow-sm mb-4
+}
+@tailwind utilities;
