@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
+    <title>Products App</title>
     <link rel="stylesheet" href="../output.css">
 </head>
 <body class="bg-zinc-50">
@@ -15,10 +15,9 @@
     
     <div class="container mx-auto">
 
-        <div class="ul m-8 p-4 rounded-lg bg-blue-400" id="message">
-            <p class="capitalize text-base text-white font-normal">product deleted/added succefully</p>
+        <div class="my-8 flex flex-col gap-y-2" id="message">
         </div>
-
+        
         <div class="grid grid-cols-1 md:grid-cols-2 m-6 md:max-w-4xl md:mx-auto" id="app">
             <div class="border-slate-300 border shadow-lg w-4/5 max-w-md mx-auto md:mx-0 h-min" id="add-product">
                 <div class="bg-gray-200 p-4 border-slate-300 border-b">
@@ -28,24 +27,10 @@
                     <input class="input" id="product-name" type="text" placeholder="Product Name" data-prop>
                     <input class="input" id="product-price" type="number" step="0.01" placeholder="Product Price" data-prop>
                     <input class="input" id="product-year" type="number" min="1900" max="2022" placeholder="Product year" data-prop>
-                    <input class="btn bg-blue-700 max-w-min" value="save" type="submit">
+                    <input class="btn bg-blue-600 max-w-min" value="save" type="submit">
                 </form>
             </div>
             <div class="mt-10 flex flex-col md:mt-0" id="product-list">
-
-                    <ul class="ul" data-id="1">
-                        <li class="props">Product Name: <span class="font-semibold">Laptop</span></li>
-                        <li class="props">Product Price: <span class="font-semibold">1500</span></li>
-                        <li class="props">Product Year: <span class="font-semibold">2021</span></li>
-                        <li class="p-2"><a class="btn bg-red-500" id="1">delete</a></li>
-                    </ul>
-              
-                    <ul class="ul" data-id="2">
-                        <li class="props">Product Name: <span class="font-semibold">Iphone 12</span></li>
-                        <li class="props">Product Price: <span class="font-semibold">1000</span></li>
-                        <li class="props">Product Year: <span class="font-semibold">2018</span></li>
-                        <li class="p-2"><a class="btn bg-red-500" id="2">delete</a></li>
-                    </ul>
                 
             </div>
         </div>
